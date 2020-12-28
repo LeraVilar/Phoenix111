@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/burger.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Phoenix</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo"><a href="#main"><img src="img/logo_footer.png"></a></div>
+        <div id="header__burger" class="header__burger"></div>
+        <div id="header__nav" class="header__nav">
+            <div class="header__items" id="items">
+
+                <div class="header__item" id="item"><a href="#price">Услуги</a></div>
+                <div class="header__item" id="item2"><a href="#comments">Отзывы</a></div>
+            </div>
+
+        <div class="header__callback">
+            <a href="tel:+79063055773" class="header__tel">+7 906 305-57-73</a>
+            <a href="" class="header__call">заполните заявку</a>
+        </div>
+
+    </header>
+    <div id="main" class="main">
+        <div class="main__first">        
+            <div class="main__text">
+                <h1>Проблемы со стиральной<br> или посудомоечной машиной?</h1>
+                <p>Приедем и отремонтируем!<br><span> Качественный ремонт любой сложности</span></p>
+            </div>
+
+        <div class="main__application" id="main__application">
+            <form action="" id="mainForm">
+                <h1>Оставить заявку</h1>
+                <p>на ремонт вашей техники</p>
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Phenix site">
+                <input type="hidden" name="admin_email" value="akopov-daniell@mail.ru">
+                <input type="hidden" name="form_subject" value="Новая заявка!">
+                <!-- END Hidden Required Fields -->
+                <input type="text" id="name" name="name" placeholder="Ваше имя*" class="_req _name">
+                <input type="tel" id="phone" name="phone" placeholder="Ваш телефон*" class="_req _tel" minlength="6">
+                <textarea rows="5" id="description" name="description">Комментарий* </textarea>
+                <button type="submit" id="submit">Вызвать мастера</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="why">
+        <img class="why__png" src="img/Слой 12.png">
+        <div class="why__items">
+            <h1>Почему стоит заказать ремонт у нас?</h1>
+
+            <div class="why__item"><img src="img/Слой 8.png">Сертифицированные мастера</div>
+
+            <div class="why__item"> <img src="img/Слой 9.png">Качество. Все детали от проверенных поставщиков</div>
+            
+            <div class="why__item"><img src="img/Слой 10.png">Мобильность. Не нужно никуда везти технику -  приедем и починим</div>
+            
+            <div class="why__item"><img src="img/Слой 11.png">Экономия. Детали для техники по оптовым ценам</div>
+        </div>
+    </div>
+    <div class="lulz">
+        <div class="lulz__bg"></div>
+        <h1>«Восстановим вашу технику из пепла»</h1>
+        <div class="lulz__counteiner">
+            <div class="lulz__items">
+                <div class="lulz__item"> <div class="lulz__img"><img src="img/lulz1.png" alt=""></div> Работаем без выходных с 10.00 до 22.00</div>
+                <div class="lulz__item"> <div class="lulz__img"><img src="img/lulz2.png" alt=""></div>Качественный и быстрый ремонт вашей техники</div>
+                <div class="lulz__item"> <div class="lulz__img"><img src="img/lulz3.png" alt=""></div> Скидка 10% пенсионерам и многодетным семьям </div>
+                <div class="lulz__item"> <div class="lulz__img"><img src="img/lulz4.png" alt=""></div> Гарантия от 2-х месяцев на все виды ремонта </div>
+            </div>
+        </div>
+    </div>
+    <div id="wecan" class="wecan">
+        <h1>Мы поможем вам починить</h1>
+        <div class="wecan__options">
+            <div class="wecan__washer">
+                <p><span class="wecan__dishwasherStyle">Р</span>емонт</p>
+                <p><span class="wecan__dishwasherStyle">Ч</span>истка фильтров</p>
+                <p><span class="wecan__dishwasherStyle">З</span>амена стекла</p>
+                <p><span class="wecan__dishwasherStyle">У</span>становка</p>
+                <p><span class="wecan__dishwasherStyle">З</span>амена электронники</p>
+                <p><span class="wecan__dishwasherStyle">Д</span>иагностика</p>
+                <p><span class="wecan__dishwasherStyle">И</span>звлечение предметов</p>
+                
+            </div> 
+            <img src="img/Слой 13.png">
+            <div class="wecan__dishwasher">
+                <p><span class="wecan__dishwasherStyle">Д</span>иагностика</p>
+                <p><span class="wecan__dishwasherStyle">Ч</span>истка фильтров</p>
+                <p><span class="wecan__dishwasherStyle">З</span>амена электронники</p>
+                <p><span class="wecan__dishwasherStyle">З</span>амена стекла</p>
+                <p><span class="wecan__dishwasherStyle">У</span>становка</p>
+                <p><span class="wecan__dishwasherStyle">Р</span>емонт</p>
+                <p><span class="wecan__dishwasherStyle">И</span>звлечение предметов</p>
+            </div>
+        </div>
+    </div>
+    <div class="price" id="price">
+        <div class="price__header">Прайс лист</div>
+        <div class="price__counteiner">
+            <div class="price__menu">
+                <div id="price__button_1" class="price__botton price__button_active">Стиральная машина</div>
+                <div id="price__button_2" class="price__botton">Посудомоичная машина</div>
+            </div>
+            <div  id="price_1" class="price__content">
+                <div class="price__list">
+                    <div class="price__items">Установка</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 1000</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Протечка</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 1200</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Скрежет или стук</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 3000</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Не сливает воду</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 1200</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Бьётся током</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 1200</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Ремонт электроники</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">Средняя цена </span> 3500</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Не крутит барабан</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 2000</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Не нагревается вода</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 2500</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Не поступает вода</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 1200</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Замена стекла люка</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">Средняя цена </span> 2500</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Замена ручки люка</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">Средняя цена </span> 2000</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Замена ручки на панели</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 1200</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Замена резины на люке</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">Средняя цена </span> 3500</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Замена петель на люке</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">Средняя цена </span> 2000</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Замена панели управления</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 1200</div>
+                </div>
+            </div>
+            <div id="price_2" class="price__content price__content_OFF">
+                <div class="price__list">
+                    <div class="price__items">Установка</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 500</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Профилактические работы</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 2000</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Замена ручек, доводчиков и тд.</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 1500</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Замена элементов управления</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 1500</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Замена сетевого шнура</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 1500</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Ремонт раковины поддона</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 1500</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Замена насоса</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">От </span> 1500</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Чистка засора с разборкой</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">Средняя цена </span> 2000</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Замена корпуса</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">Средняя цена </span> 3000</div>
+                </div>
+                <div class="price__list">
+                    <div class="price__items">Извлечение предметов</div><div class="price__dots">.......</div><div class="price__sum"> <span class="price__sumStyle">Средняя цена </span> 2000</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+    <div id="comments" class="comments">
+        <h1>Отзовы наших клиентов</h1>
+        <div class="comments__items">
+            <div class="comments__item">
+                <h2>Алишкина В.</h2>
+                <p>Не люблю мыть посуду руками, сломалась машинка, часть посуды в пене другая часть мытая. Вызвала мастера, дешево и быстро решил все мои вопросы. Всем советую!</p>
+            </div>
+            <div class="comments__item">
+                <h2>Юрьев С.</h2>
+                <p>Времени нет самому разбираться, вот и обратился, не пожалел! Быстро приехали, в этот же день все было готово. Молодцы!</p>
+            </div>
+            <div class="comments__item">
+                <h2>Шишкин А.</h2>
+                <p>В начале пытался сделать сам, но не нашел нужных деталей. Пришел специалист показал как потом исправить стуки, отремонтировал сказал где брать детали, спасибо!</p>
+            </div>
+            <div class="comments__item">
+                <h2>Гаврилова Л.</h2>
+                <p>Пришел мастер, все посмотрел, объяснил в чем дело, назвал цену, все сделал. Быстро, недорого, качественно.</p>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer__counteiner">
+        <div class="footer__logo"><a href="#main"><img src="img/logo_footer.png" alt=""></a></div>
+        <!-- <div class="footer__org">
+            <p>ИНН: 00000000000000000</p>
+            <p>ОРГН: 0000000000000000</p>
+        </div> -->
+        <div class="footer__contacts">
+                <div class="footer__contact"> <a href="https://wa.me/whatsapp+79063055773"><img src="img/WHATSUP.png" alt=""></a></div>
+                <div class="footer__contact"> <a href="https://www.instagram.com/phoenix_remont64"><img src="img/inst.png" alt=""></a></div>
+                <div class="footer__contact footer__vk"><a href="https://vk.com/petr_samovskiy"><img src="img/vk.png" alt=""></a></div>
+            </div>
+            <div class="footer__num">
+                <div class="footer__phone"><a href="tel:+79063055773">+7 906 305-57-73</a></div>
+                <div class="footer__mail"><a href="mailto:phoenix_remont_64@mail.ru">phoenix_remont_64@mail.ru</a></div>
+            </div>
+    </div>
+
+</footer>
+
+
+
+<script src="scripts/scripts.js"></script>
+<script src="scripts/burger.js"></script>
+<script src="scripts/validator.js"></script>
+<script src="scripts/mail.js"></script>
+</body>
+</html>

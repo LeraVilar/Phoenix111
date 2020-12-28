@@ -1,0 +1,217 @@
+body{
+    box-sizing: border-box;
+
+}
+@font-face{
+    font-family: Calibre;
+    src: url(Rubik-VariableFont_wght.ttf);
+}
+
+
+$screen-burger: "min-width: 1171px";
+$screen-max: "max-width: 1170px";
+$screen-mid: "max-width: 900px";
+$screen-min: "max-width: 400px";
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('WM in room_.jpg') center no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+.good{
+    background: #FFFFFF;
+    box-sizing: border-box;
+    width: 60%;
+    min-height: 707px;
+    height: 70%;
+    font-family: Calibre;
+    color: #474747;
+    margin: auto;
+    padding: 10% 5%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+
+    @media screen and ($screen-min){
+        width: 100%;
+    }
+    @media screen and ($screen-mid){
+        width: 100%;
+    }
+
+    &__header {
+        text-align: center;
+        font-size: calc(36px + 16 * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    &__text {
+        margin-top: 40px;
+        font-size: 26px;
+    }
+    &__textStyle {
+        
+        font-size: 30px;
+        display: block;
+        margin-top: 40px;
+        &_color{
+            color: #e07c02;
+        }
+    }
+
+    &__phone {
+        margin-top: 40px;
+        text-align: right;
+        font-size: 36px;
+        a{
+            color: #474747;
+            text-decoration: none;
+        }
+        :hover{
+            color: #ff8d00;
+            cursor: pointer;
+        }
+        @media screen and ($screen-min){
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+}
+
+
+.footer {
+    font-family: Calibre;
+    min-height: 10vh;
+    min-width: 100%;
+    background-color: #474747;
+
+    &__counteiner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    @media screen and ($screen-min) {
+			justify-content: center;
+    }
+    @media screen and ($screen-mid) {
+        justify-content: space-around;
+}
+}
+
+    &__logo {
+        :hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        margin: 13px 40px 0px 50px;
+        @media screen and ($screen-mid) {
+         display: none;
+        }
+        @media screen and ($screen-min) {
+			display: block;
+    }
+    }
+
+    &__org {
+        color: transparent;
+        
+        p{
+            margin:0px 0px 3px 0px;
+        }
+            @media screen and ($screen-min) {
+                margin: 20px 0px;
+                p{
+                    margin: 0;
+                }
+        }
+        @media screen and ($screen-mid) {
+            margin: 20px 20px;
+           }
+    }
+
+    &__contacts {
+        
+        margin-top: 14px;
+        display: flex;
+        
+
+    }
+
+    &__contact {
+        margin: 5px;
+        :hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        img{
+            height: 60px;
+        }
+    }
+    &__vk{
+        
+        :hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        img{
+            height: 72px;
+            margin-top: -5px;
+            margin-left: -4px;
+        }
+
+    }
+    &__num{
+        margin-left: 40px;
+        margin-right: 20px;
+        :hover{
+            color: #ff8d00;
+            cursor: pointer;
+        }
+        @media screen and ($screen-min){
+            margin: 5px 10px;
+        }
+    }
+    &__phone {
+        text-align: right;
+        color: white;
+        font-size: 30px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        :hover{
+            color: #ff8d00;
+            cursor: pointer;
+        }
+        @media screen and ($screen-min){
+            margin: 20px 0px;
+            text-align: center;
+        }
+        @media screen and ($screen-mid) {
+            margin: 10px 0px; 
+            text-align: center;
+ 
+         }
+    }
+
+    &__mail {
+        text-align: right;
+        color: white;
+        font-size: 12px;
+        @media screen and ($screen-min){
+            margin: 20px 0px;
+            font-size: 30px;
+            text-align: center;
+        }
+        @media screen and ($screen-mid) {
+           font-size: 30px;
+           margin: 10px 0px;
+           text-align: center;
+
+        }
+    }
+}

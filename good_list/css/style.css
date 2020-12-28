@@ -1,0 +1,273 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Calibre;
+  src: url(Rubik-VariableFont_wght.ttf);
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("WM in room_.jpg") center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.good {
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 60%;
+  min-height: 707px;
+  height: 70%;
+  font-family: Calibre;
+  color: #474747;
+  margin: auto;
+  padding: 10% 5%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+@media screen and (max-width: 400px) {
+  .good {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .good {
+    width: 100%;
+  }
+}
+
+.good__header {
+  text-align: center;
+  font-size: calc(36px + 16 * ((100vw - 320px) / (1920 - 320)));
+}
+
+.good__text {
+  margin-top: 40px;
+  font-size: 26px;
+}
+
+.good__textStyle {
+  font-size: 30px;
+  display: block;
+  margin-top: 40px;
+}
+
+.good__textStyle_color {
+  color: #e07c02;
+}
+
+.good__phone {
+  margin-top: 40px;
+  text-align: right;
+  font-size: 36px;
+}
+
+.good__phone a {
+  color: #474747;
+  text-decoration: none;
+}
+
+.good__phone :hover {
+  color: #ff8d00;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .good__phone {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.footer {
+  font-family: Calibre;
+  min-height: 10vh;
+  min-width: 100%;
+  background-color: #474747;
+}
+
+.footer__counteiner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 400px) {
+  .footer__counteiner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer__counteiner {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.footer__logo {
+  margin: 13px 40px 0px 50px;
+}
+
+.footer__logo :hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 900px) {
+  .footer__logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer__logo {
+    display: block;
+  }
+}
+
+.footer__org {
+  color: transparent;
+}
+
+.footer__org p {
+  margin: 0px 0px 3px 0px;
+}
+
+@media screen and (max-width: 400px) {
+  .footer__org {
+    margin: 20px 0px;
+  }
+  .footer__org p {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer__org {
+    margin: 20px 20px;
+  }
+}
+
+.footer__contacts {
+  margin-top: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__contact {
+  margin: 5px;
+}
+
+.footer__contact :hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.footer__contact img {
+  height: 60px;
+}
+
+.footer__vk :hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.footer__vk img {
+  height: 72px;
+  margin-top: -5px;
+  margin-left: -4px;
+}
+
+.footer__num {
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.footer__num :hover {
+  color: #ff8d00;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .footer__num {
+    margin: 5px 10px;
+  }
+}
+
+.footer__phone {
+  text-align: right;
+  color: white;
+  font-size: 30px;
+}
+
+.footer__phone a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__phone :hover {
+  color: #ff8d00;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .footer__phone {
+    margin: 20px 0px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer__phone {
+    margin: 10px 0px;
+    text-align: center;
+  }
+}
+
+.footer__mail {
+  text-align: right;
+  color: white;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 400px) {
+  .footer__mail {
+    margin: 20px 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer__mail {
+    font-size: 30px;
+    margin: 10px 0px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

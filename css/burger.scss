@@ -1,0 +1,24 @@
+.header {
+  &__burger {
+    background: url(../img/icons8-menu.svg);
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+    position: absolute;
+    right: 50px;
+    top: 26px;
+
+    @media screen and (min-width: 1171px) {
+           display: none;
+         }
+      }
+  .active {
+      background: url(../img/icons8-cancel.svg) center;
+      width: 50px;
+      height: 50px;
+      transition: 0.5s;
+      position: absolute;
+      z-index: 55;
+    }
+  
+}
